@@ -7,6 +7,24 @@
     <Nullable>enable</Nullable>
     <PublishAot>true</PublishAot>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <StartupObject>McDonalds_Monopoly_generator.Program</StartupObject>
+    <ApplicationIcon>mcs_logo.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <Copyright>MIT</Copyright>
+	<OptimizationPreference>Size</OptimizationPreference>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="mcs_logo.ico" />
+  </ItemGroup>
 
 </Project>

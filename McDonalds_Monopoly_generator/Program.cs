@@ -37,6 +37,8 @@
                 Console.WriteLine("Invalid arguments");
                 Console.ResetColor();
             }
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
         static void GenerateAndPrint(int count, int lenght)
         {
